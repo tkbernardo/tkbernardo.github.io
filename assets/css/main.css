@@ -23,6 +23,7 @@
 
 		#nav-header .nav-header-container ul {
 			list-style: none;
+			margin: 0 0 1.7rem 0;
 		}
 
 		#nav-header .nav-header-container ul li {
@@ -42,31 +43,29 @@
 			cursor: pointer;
 		}
 
+		#nav-home-link:before {
+			content: "";
+			display: block;
+			background: url('../../images/icons/icon_house_alt.svg') no-repeat center;
+			background-size: 1.2rem;
+			width: 1.2rem;
+			height: 1.2rem;
+			float: left;
+			margin: 0 0.5rem 0 0;
+		}
+
+		#nav-projects-link:before {
+			content: "";
+			display: block;
+			background: url(../../images/icons/arrow_carrot-down.svg) no-repeat center;
+			background-size: 1.2rem;
+			width: 1.2rem;
+			height: 1.6rem;
+			float: right;
+			margin: 0 0 0 0.2rem;
+		}
+
 		#nav-header .nav-header-container ul li a img {
-			width: 20px;
-			margin-right: 0.5rem;
-		}
-
-		#nav-header-mobile .nav-header-container {
-			padding: 1rem 4rem;
-			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
-		}
-
-		#nav-header-mobile .nav-header-container ul {
-			list-style: none;
-		}
-
-		#nav-header-mobile .nav-header-container ul li {
-			font-weight: 500;
-		}
-
-		#nav-header-mobile .nav-header-container ul li a {
-			text-decoration: none;
-			padding: 0.5rem 0;
-			cursor: pointer;
-		}
-
-		#nav-header-mobile .nav-header-container ul li a img {
 			width: 20px;
 			margin-right: 0.5rem;
 		}
@@ -103,20 +102,12 @@
 
 	@media screen and (min-width: 1681px) {
 
-		#nav-header-mobile {
-			display: none;
-		}
-
 		#nav-header .nav-header-container {
 			padding: 1rem 6rem;
 		}
 	}
 
 	@media screen and (max-width: 1680px) {
-
-		#nav-header-mobile {
-			display: none;
-		}
 
 		#nav-header .nav-header-container {
 			padding: 1rem 4rem;
@@ -125,20 +116,12 @@
 
 	@media screen and (max-width: 1280px) {
 
-		#nav-header-mobile {
-			display: none;
-		}
-
 		#nav-header .nav-header-container {
 			padding: 1rem 3rem;
 		}
 	}
 
 	@media screen and (max-width: 980px) {
-
-		#nav-header-mobile {
-			display: none;
-		}
 
 		#nav-header .nav-header-container {
 			padding: 1rem 2rem;
@@ -147,24 +130,12 @@
 
 	@media screen and (max-width: 736px) {
 
-		#nav-header-mobile {
-			display: none;
-		}
-
 		#nav-header .nav-header-container {
 			padding: 1rem;
 		}
 	}
 
 	@media screen and (max-width: 480px) {
-
-		#nav-header {
-			display: none;
-		}
-
-		#nav-header-mobile {
-			display: block;
-		}
 
 		#nav-header .nav-header-container {
 			padding: 1rem;
@@ -182,15 +153,19 @@
 		}
 
 		#nav-projects .gallery article {
-			max-height: 11rem;
+			max-height: 9.8rem;
+		}
+
+		#nav-header .nav-header-container ul {
+			padding-left: 0.5rem
 		}
 
 		#nav-header .nav-header-container ul li {
-			padding: 0 0.5rem 0 0;
+			padding: 0 0.75rem 0 0;
 		}
 
 		#nav-header .nav-header-container ul li:not(:first-child) {
-			padding: 0 0.5rem;
+			padding: 0 0.75rem;
 		}
 	}
 
