@@ -33,7 +33,7 @@
 		}
 
 		#nav-header .nav-header-container ul li:not(:first-child) {
-			border-left: solid 1px;
+			border-left: solid 1px #ccc;
 			padding: 0 1rem;
 		}
 
