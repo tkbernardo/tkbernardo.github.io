@@ -1874,7 +1874,7 @@
 	}
 
 		p.major {
-			font-size: 1.25rem;
+			font-size: 1.4rem;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2865,7 +2865,7 @@
 	}
 
 	header h1 + p {
-		font-size: 1.375rem;
+		font-size: 1.8rem;
 	}
 
 	header h2 + p {
