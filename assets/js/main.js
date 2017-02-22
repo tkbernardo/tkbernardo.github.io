@@ -250,7 +250,9 @@ $('#nav-projects-link').click(function() {
 							$gallery = $a.parents('.gallery'),
 							$modal = $gallery.children('.modal'),
 							$modalImg = $modal.find('img'),
-							href = $a.attr('href');
+                            $modalCaption = $modal.find('p'),
+							href = $a.attr('href'),
+							caption = $a.data('caption');
 
 						// Not an image? Bail.
 							if (!href.match(/\.(jpg|gif|png|mp4)$/))
@@ -275,6 +277,8 @@ $('#nav-projects-link').click(function() {
 
 						// Focus.
 							$modal.focus();
+
+							$modalCaption.text(caption ? caption : '');
 
 						// Delay.
 							setTimeout(function() {
@@ -336,7 +340,7 @@ $('#nav-projects-link').click(function() {
 								$modal.trigger('click');
 
 					})
-					.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
+					.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /><p class="caption"></p></div></div>')
 						.find('img')
 							.on('load', function(event) {
 
