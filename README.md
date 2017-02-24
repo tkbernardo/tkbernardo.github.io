@@ -6,6 +6,8 @@ TODO
 
 ### Build
 
+In order to build the project you should not touch the main.css file underneath assets as this will be 
+
 ```bash
 $ compass compile
 ```

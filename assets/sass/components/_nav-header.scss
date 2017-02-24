@@ -88,3 +88,15 @@
 #nav-projects .gallery .caption p {
   color: #eee;
 }
+
+.nav-projects_backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  content: '';
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}

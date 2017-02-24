@@ -1914,19 +1914,20 @@ body {
 /* line 15, ../sass/base/_page.scss */
 body {
   -ms-overflow-style: scrollbar;
+  position: relative;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 21, ../sass/base/_page.scss */
+  /* line 22, ../sass/base/_page.scss */
   html, body {
     min-width: 320px;
   }
 }
-/* line 26, ../sass/base/_page.scss */
+/* line 27, ../sass/base/_page.scss */
 body {
   background: #ffffff;
 }
-/* line 32, ../sass/base/_page.scss */
+/* line 33, ../sass/base/_page.scss */
 body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   -moz-animation: none !important;
   -webkit-animation: none !important;
@@ -1936,6 +1937,11 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   -webkit-transition: none !important;
   -ms-transition: none !important;
   transition: none !important;
+}
+
+/* line 41, ../sass/base/_page.scss */
+.scroller_content--disabled {
+  overflow: hidden;
 }
 
 /* Type */
@@ -8339,6 +8345,19 @@ body.is-loading .items.onload-fade-in > * > .inner {
 /* line 88, ../sass/components/_nav-header.scss */
 #nav-projects .gallery .caption p {
   color: #eee;
+}
+
+/* line 92, ../sass/components/_nav-header.scss */
+.nav-projects_backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  content: '';
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 /* Wrapper */
