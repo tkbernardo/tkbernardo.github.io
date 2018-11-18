@@ -3647,6 +3647,15 @@ body.is-loading .banner.onload-image-fade-in .image img {
   border-radius: 0;
   width: 50%;
 }
+
+.banner.style1 .image-bio {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  float: left;
+  margin-right: 1.5rem;
+}
+
 /* line 256, ../sass/components/_banner.scss */
 .banner.style1 .image img {
   -moz-object-fit: cover;
@@ -8251,7 +8260,7 @@ body.is-loading .items.onload-fade-in > * > .inner {
 
 /* line 8, ../sass/components/_nav-header.scss */
 #nav-header .nav-header-container {
-  padding: 1rem 4rem;
+  padding: 1rem;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
