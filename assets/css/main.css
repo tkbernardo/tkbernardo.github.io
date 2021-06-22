@@ -2743,6 +2743,22 @@ input[type="radio"]:focus + label:before {
   position: relative;
   text-align: center;
 }
+.process {
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+  width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+.process img {
+  height: 60%;
+  width: 60%;
+}
 /* line 8, ../sass/libs/_mixins.scss */
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
@@ -8306,7 +8322,7 @@ body.is-loading .items.onload-fade-in > * > .inner {
 #nav-projects-link:before {
   content: "";
   display: block;
-  background: url(../../images/icons/arrow_carrot-down.svg) no-repeat center;
+  background: url("../../images/icons/arrow_carrot-down.svg") no-repeat center;
   background-size: 1.2rem;
   width: 1.2rem;
   height: 1.6rem;
